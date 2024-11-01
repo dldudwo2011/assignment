@@ -1,0 +1,24 @@
+﻿@page
+@model WebApplication1.Pages.DynamicDisplaySampleModel
+@{
+}
+<!DOCTYPE html><html>
+    <head>
+        <title></title>
+        </head>
+    <body>
+        <table>
+            @foreach (var SampleObject in Model.SampleObjectCollection)
+            {
+                <tr>
+                    <td>
+                        @SampleObject.FirstProperty
+                    </td>
+                    <td>
+                        @SampleObject.SecondProperty
+                    </td>
+                </tr>
+        }
+    </table>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="icon" href="~/images/BAISTFavoritesIcon.ico"/>
+    <link rel="stylesheet" href="~/css/SampleBlueStyle.css" />
+</head>
+<body>
+    <header>Header area from layout</header>
+    <nav>Nav area from layout</nav>
+    <main>
+        Main area from layout
+        <div>
+        @RenderBody()
+        </div>
+    </main>
+    <footer>
+        footer area from layout
+    </footer>
+</body>
+</html>
